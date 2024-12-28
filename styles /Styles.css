@@ -5,36 +5,31 @@
   box-sizing: border-box;
 }
 
-/* Ensure full viewport height for body */
+/* Full page height for body */
 html, body {
   height: 100%;
   font-family: 'Arial', sans-serif;
   background-color: #e6f7ff;
   color: #333;
-}
-
-/* Body Flexbox Setup for Vertical and Horizontal Centering */
-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures footer stays at the bottom */
-  align-items: center; /* Centers content horizontally */
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
-  min-height: 100vh; /* Full height of viewport */
-  padding: 20px;
+  min-height: 100vh;
 }
 
-/* Navigation Styling */
+/* Navigation Container */
 .nav-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%; /* Ensures it spans the whole page width */
   margin-top: 20px;
 }
 
 .nav-item {
-  margin: 10px 0; /* Space between nav items */
+  margin: 10px 0;
 }
 
 .nav-item a {

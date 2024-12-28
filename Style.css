@@ -1,19 +1,1 @@
-/* Set basic styles for the body */
-body {
-  margin: 0;
-  padding: 0;
-  height: 200vh; /* Makes the page scrollable */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* Light gray background */
-}
 
-/* Center the text in the middle of the screen */
-.center-text {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333; /* Dark gray text */
-  text-align: center;
-}

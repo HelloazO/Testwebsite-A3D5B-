@@ -33,7 +33,7 @@
       width: 100%;
       padding: 10px 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: center; /* Center the items in the header */
       align-items: center;  /* Aligns content in the center vertically */
       position: relative;
     }
@@ -60,17 +60,17 @@
       color: #add8e6; /* Light blue */
     }
 
+    /* Log In Button Container */
     .login-container {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);  /* Centers the button vertically */
+      width: 100%;
+      text-align: center;
+      margin-top: 20px; /* Adds space between the header and login button */
     }
 
     .login-button {
       background-color: #4682b4;
       color: #fff;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 5px;
       font-weight: bold;
       text-transform: uppercase;
@@ -78,6 +78,7 @@
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      margin-top: 10px; /* Adds space above the button */
     }
 
     .login-button:hover {
@@ -158,11 +159,12 @@
         <li><a href="#">Membership Card</a></li>
       </ul>
     </nav>
-    <!-- Log In Button -->
-    <div class="login-container">
-      <button class="login-button">Log In</button>
-    </div>
   </header>
+
+  <!-- Log In Button Container -->
+  <div class="login-container">
+    <button class="login-button">Log In</button>
+  </div>
 
   <main>
     <div class="container">

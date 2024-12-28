@@ -1,19 +1,99 @@
-/* Set basic styles for the body */
-body {
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  height: 200vh; /* Makes the page scrollable */
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #4682b4; /* Steel blue */
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: #add8e6; /* Light blue */
+}
+
+/* Main Content Styling */
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* Light gray background */
+  height: calc(100vh - 120px); /* Adjusted for header and footer */
 }
 
-/* Center the text in the middle of the screen */
 .center-text {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333; /* Dark gray text */
   text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
 }
+
+.center-text h1 {
+  font-size: 2.5rem;
+  color: #4682b4;
+}
+
+.center-text p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4682b4;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.cta-button:hover {
+  background-color: #5f9ea0; /* Light sea green */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4682b4;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+

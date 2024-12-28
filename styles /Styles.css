@@ -1,73 +1,80 @@
-/* Reset all margins and padding */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and full page styling */
-html, body {
-  height: 100%;
+/* Body Styling */
+body {
   font-family: 'Arial', sans-serif;
-  background-color: #e6f7ff;  /* Light blue background */
+  background-color: #e6f7ff; /* Light blue background */
   color: #333;
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Center content vertically */
-  align-items: center;  /* Center content horizontally */
-  min-height: 100vh;
-  text-align: center;
+  justify-content: space-between;
+  height: 100vh;
 }
 
-/* Navigation Section */
+/* Header Styling */
+header {
+  background-color: #4682b4; /* Steel blue */
+  padding: 10px 0;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  list-style: none;
 }
 
 nav ul li {
-  font-size: 1.1rem;
+  margin: 0 20px;
 }
 
 nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color: #4682b4;  /* Steel blue color */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 nav ul li a:hover {
-  color: #5f9ea0;  /* Light sea green */
+  color: #add8e6; /* Light blue */
 }
 
-/* Main Content Box (White Box) */
-.content-container {
+/* Main Content Styling */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.center-text {
+  text-align: center;
   background-color: #ffffff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 800px;
-  margin-top: 30px;
 }
 
-/* Content Title */
-.content-container h1 {
+.center-text h1 {
   font-size: 2.5rem;
   color: #4682b4;
   margin-bottom: 20px;
 }
 
-/* Content Paragraph */
-.content-container p {
+.center-text p {
   font-size: 1.1rem;
   margin: 10px 0;
 }
 
-/* Call-to-action Button */
 .cta-button {
   display: inline-block;
   background-color: #4682b4;
@@ -83,15 +90,14 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-  background-color: #5f9ea0;  /* Light sea green */
+  background-color: #5f9ea0; /* Light sea green */
 }
 
-/* Footer Section */
+/* Footer Styling */
 footer {
   background-color: #4682b4;
   color: #fff;
-  padding: 15px;
-  width: 100%;
   text-align: center;
-  margin-top: auto;
+  padding: 15px;
+  position: relative;
 }

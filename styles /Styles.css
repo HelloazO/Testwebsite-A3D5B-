@@ -12,9 +12,9 @@ body {
   color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: space-between; /* Distribute space between elements */
   align-items: center; /* Center content horizontally */
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Full viewport height */
   text-align: center; /* Center all text inside the body */
   padding: 20px; /* Optional padding around the page */
 }
@@ -52,7 +52,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 800px; /* Max width of the white box */
-  margin-top: 20px; /* Space between navigation and content */
+  margin-top: 30px; /* Space between navigation and content */
 }
 
 /* Title Text */
@@ -94,6 +94,6 @@ footer {
   text-align: center;
   padding: 15px;
   width: 100%;
-  position: absolute;
+  position: relative; /* Ensures footer is positioned at the bottom */
   bottom: 0;
 }

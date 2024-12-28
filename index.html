@@ -32,6 +32,10 @@
       background-color: #4682b4; /* Steel blue */
       width: 100%;
       padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;  /* Aligns content in the center vertically */
+      position: relative;
     }
 
     nav ul {
@@ -54,6 +58,30 @@
 
     nav ul li a:hover {
       color: #add8e6; /* Light blue */
+    }
+
+    .login-container {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);  /* Centers the button vertically */
+    }
+
+    .login-button {
+      background-color: #4682b4;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-button:hover {
+      background-color: #5f9ea0; /* Light sea green */
     }
 
     /* Main Content Styling */
@@ -130,6 +158,10 @@
         <li><a href="#">Membership Card</a></li>
       </ul>
     </nav>
+    <!-- Log In Button -->
+    <div class="login-container">
+      <button class="login-button">Log In</button>
+    </div>
   </header>
 
   <main>

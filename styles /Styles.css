@@ -10,85 +10,63 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #e6f7ff; /* Very light blue background */
   color: #333;
-  line-height: 1.6;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center all text inside the body */
 }
 
-/* Header Styling */
-header {
-  background-color: #4682b4; /* Steel blue */
-  padding: 10px 0;
-}
-
-nav ul {
+/* Navigation Container */
+.nav-container {
   display: flex;
-  justify-content: center;
-  list-style: none;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally */
+  margin-bottom: 30px; /* Space between nav and content */
 }
 
-nav ul li {
-  margin: 0 20px;
+/* Navigation Item Styling */
+.nav-item {
+  margin: 10px 0; /* Space between the navigation items */
 }
 
-nav ul li a {
-  color: #fff;
+.nav-item a {
   text-decoration: none;
+  color: #4682b4; /* Steel blue color */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-nav ul li a:hover {
-  color: #add8e6; /* Light blue */
+.nav-item a:hover {
+  color: #add8e6; /* Light blue color */
 }
 
-/* Main Content Styling */
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.center-text {
-  text-align: center;
+/* Content Box (White Box) */
+.content-container {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 800px;
-  display: flex; /* Enables flexbox */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Vertically center the content */
-  align-items: center; /* Horizontally center the content */
-  height: auto; /* Ensure it adjusts to the content */
+  width: 80%;
+  max-width: 800px; /* Max width of the white box */
 }
 
-.center-text h1 {
+/* Title Text */
+.content-container h1 {
   font-size: 2.5rem;
   color: #4682b4;
   margin-bottom: 20px;
 }
 
-.center-text p {
+/* Description Text */
+.content-container p {
   font-size: 1.1rem;
   margin: 10px 0;
 }
 
-/* Buttons Styling */
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Add space between buttons */
-  width: 100%; /* Ensure buttons are within the container */
-  margin-top: 20px; /* Space above the buttons */
-}
-
+/* Call to Action Button */
 .cta-button {
   display: inline-block;
   background-color: #4682b4;
@@ -99,6 +77,7 @@ main {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 20px;
   transition: background-color 0.3s ease;
 }
 
@@ -112,5 +91,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }

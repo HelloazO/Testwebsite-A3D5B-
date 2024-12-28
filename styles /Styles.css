@@ -1,35 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teleportation Program Personnel Panel</title>
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Account</a></li>
-        <li><a href="#">Membership Card</a></li>
-      </ul>
-    </nav>
-  </header>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <div class="center-text">
-      <h1>Welcome to the Teleportation Program Personnel Panel</h1>
-      <p>Your account and membership card information are displayed here.</p>
-      <div class="cta-buttons">
-        <a href="#" class="cta-button">Get Started</a>
-        <a href="#" class="cta-button">Learn More</a>
-      </div>
-    </div>
-  </main>
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f7ff; /* Very light blue background */
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 
-  <footer>
-    <p>&copy; 2024 Teleportation Program. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+/* Header Styling */
+header {
+  background-color: #4682b4; /* Steel blue */
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: #add8e6; /* Light blue */
+}
+
+/* Main Content Styling */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.center-text {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+}
+
+.center-text h1 {
+  font-size: 2.5rem;
+  color: #4682b4;
+  margin-bottom: 20px;
+}
+
+.center-text p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add space between buttons */
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4682b4;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5f9ea0; /* Light sea green */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4682b4;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}

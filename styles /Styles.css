@@ -62,10 +62,6 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 800px;
-  display: flex; /* Added for centering content */
-  flex-direction: column; /* Stacks elements vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
 }
 
 .center-text h1 {
@@ -79,10 +75,13 @@ main {
   margin: 10px 0;
 }
 
+/* Fix to ensure centering of both text and buttons */
 .cta-buttons {
   display: flex;
   justify-content: center;
   gap: 20px; /* Add space between buttons */
+  width: 100%; /* Ensure buttons are within the container */
+  margin-top: 20px; /* Space above the buttons */
 }
 
 .cta-button {

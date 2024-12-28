@@ -1,48 +1,52 @@
-/* General Reset */
+/* Reset all margins and padding to avoid browser inconsistencies */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
+/* Ensure full viewport height for body */
+html, body {
+  height: 100%;
   font-family: 'Arial', sans-serif;
-  background-color: #e6f7ff; /* Very light blue background */
+  background-color: #e6f7ff;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribute space between elements */
-  align-items: center; /* Center content horizontally */
-  min-height: 100vh; /* Full viewport height */
-  text-align: center; /* Center text */
-  padding: 0 20px; /* Optional padding */
 }
 
-/* Navigation Container */
+/* Body Flexbox Setup for Vertical and Horizontal Centering */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures footer stays at the bottom */
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+  min-height: 100vh; /* Full height of viewport */
+  padding: 20px;
+}
+
+/* Navigation Styling */
 .nav-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center nav items horizontally */
-  width: 100%;
-  margin-top: 20px; /* Space above the nav */
+  align-items: center;
+  width: 100%; /* Ensures it spans the whole page width */
+  margin-top: 20px;
 }
 
-/* Navigation Item Styling */
 .nav-item {
-  margin: 10px 0; /* Space between the navigation items */
+  margin: 10px 0; /* Space between nav items */
 }
 
 .nav-item a {
   text-decoration: none;
-  color: #4682b4; /* Steel blue */
+  color: #4682b4;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .nav-item a:hover {
-  color: #add8e6; /* Light blue color */
+  color: #add8e6;
 }
 
 /* Main Content Box (White Box) */
@@ -51,19 +55,19 @@ body {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%; /* Make the content width 90% of the viewport */
-  max-width: 800px; /* Maximum width */
-  margin-top: 30px; /* Space between navigation and content */
+  width: 90%;
+  max-width: 800px;
+  margin-top: 30px;
 }
 
-/* Title Text */
+/* Content Box Title */
 .content-container h1 {
   font-size: 2.5rem;
   color: #4682b4;
   margin-bottom: 20px;
 }
 
-/* Description Text */
+/* Content Box Paragraph */
 .content-container p {
   font-size: 1.1rem;
   margin: 10px 0;
@@ -85,16 +89,16 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #5f9ea0; /* Light sea green */
+  background-color: #5f9ea0;
 }
 
 /* Footer Styling */
 footer {
   background-color: #4682b4;
   color: #fff;
-  text-align: center;
   padding: 15px;
   width: 100%;
-  position: relative; /* Ensure the footer is at the bottom */
+  text-align: center;
+  position: relative; /* Keeps it at the bottom of the page */
   bottom: 0;
 }

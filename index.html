@@ -63,7 +63,9 @@
     /* Log In Button Container */
     .login-container {
       width: 100%;
-      text-align: center;
+      display: flex;
+      justify-content: flex-end; /* Aligns the button to the right */
+      padding-right: 20px; /* Moves the button a bit away from the edge */
       margin-top: 20px; /* Adds space between the header and login button */
     }
 
@@ -78,7 +80,6 @@
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin-top: 10px; /* Adds space above the button */
     }
 
     .login-button:hover {
@@ -161,7 +162,7 @@
     </nav>
   </header>
 
-  <!-- Log In Button Container -->
+  <!-- Log In Button Container (Positioned below header but on the right side) -->
   <div class="login-container">
     <button class="login-button">Log In</button>
   </div>

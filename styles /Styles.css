@@ -1,47 +1,46 @@
-/* Reset all margins and padding to avoid browser inconsistencies */
+/* Reset all margins and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Full page height for body */
+/* Body and full page styling */
 html, body {
   height: 100%;
   font-family: 'Arial', sans-serif;
-  background-color: #e6f7ff;
+  background-color: #e6f7ff;  /* Light blue background */
   color: #333;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
   min-height: 100vh;
+  text-align: center;
 }
 
-/* Navigation Container */
+/* Navigation Section */
 .nav-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 30px;
   margin-top: 20px;
 }
 
 .nav-item {
-  margin: 10px 0;
+  font-size: 1.1rem;
 }
 
 .nav-item a {
   text-decoration: none;
-  color: #4682b4;
+  color: #4682b4;  /* Steel blue color */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .nav-item a:hover {
-  color: #add8e6;
+  color: #5f9ea0;  /* Light sea green */
 }
 
 /* Main Content Box (White Box) */
@@ -55,20 +54,20 @@ html, body {
   margin-top: 30px;
 }
 
-/* Content Box Title */
+/* Content Title */
 .content-container h1 {
   font-size: 2.5rem;
   color: #4682b4;
   margin-bottom: 20px;
 }
 
-/* Content Box Paragraph */
+/* Content Paragraph */
 .content-container p {
   font-size: 1.1rem;
   margin: 10px 0;
 }
 
-/* Call to Action Button */
+/* Call-to-action Button */
 .cta-button {
   display: inline-block;
   background-color: #4682b4;
@@ -84,16 +83,15 @@ html, body {
 }
 
 .cta-button:hover {
-  background-color: #5f9ea0;
+  background-color: #5f9ea0;  /* Light sea green */
 }
 
-/* Footer Styling */
+/* Footer Section */
 footer {
   background-color: #4682b4;
   color: #fff;
   padding: 15px;
   width: 100%;
   text-align: center;
-  position: relative; /* Keeps it at the bottom of the page */
-  bottom: 0;
+  margin-top: auto;
 }

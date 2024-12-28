@@ -20,19 +20,18 @@ html, body {
 }
 
 /* Navigation Section */
-.nav-container {
+nav ul {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
-  width: 100%;
 }
 
-.nav-item {
+nav ul li {
   font-size: 1.1rem;
 }
 
-.nav-item a {
+nav ul li a {
   text-decoration: none;
   color: #4682b4;  /* Steel blue color */
   font-weight: bold;
@@ -40,7 +39,7 @@ html, body {
   letter-spacing: 1px;
 }
 
-.nav-item a:hover {
+nav ul li a:hover {
   color: #5f9ea0;  /* Light sea green */
 }
 

@@ -15,16 +15,17 @@ body {
   justify-content: space-between; /* Distribute space between elements */
   align-items: center; /* Center content horizontally */
   min-height: 100vh; /* Full viewport height */
-  text-align: center; /* Center all text inside the body */
-  padding: 20px; /* Optional padding around the page */
+  text-align: center; /* Center text */
+  padding: 0 20px; /* Optional padding */
 }
 
 /* Navigation Container */
 .nav-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the items horizontally */
-  margin-bottom: 30px; /* Space between nav and content */
+  align-items: center; /* Center nav items horizontally */
+  width: 100%;
+  margin-top: 20px; /* Space above the nav */
 }
 
 /* Navigation Item Styling */
@@ -34,7 +35,7 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: #4682b4; /* Steel blue color */
+  color: #4682b4; /* Steel blue */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -44,14 +45,14 @@ body {
   color: #add8e6; /* Light blue color */
 }
 
-/* Content Box (White Box) */
+/* Main Content Box (White Box) */
 .content-container {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 800px; /* Max width of the white box */
+  width: 90%; /* Make the content width 90% of the viewport */
+  max-width: 800px; /* Maximum width */
   margin-top: 30px; /* Space between navigation and content */
 }
 
@@ -94,6 +95,6 @@ footer {
   text-align: center;
   padding: 15px;
   width: 100%;
-  position: relative; /* Ensures footer is positioned at the bottom */
+  position: relative; /* Ensure the footer is at the bottom */
   bottom: 0;
 }

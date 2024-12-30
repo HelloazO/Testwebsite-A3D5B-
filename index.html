@@ -46,11 +46,36 @@
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: 1.1rem; /* Slightly larger font */
+      font-size: 1.1rem;
     }
 
     nav ul li a:hover {
       color: #add8e6; /* Light blue */
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .login-button, .signup-button {
+      background-color: #4682b4;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1.1rem;
+      margin: 0 10px; /* Space between the buttons */
+    }
+
+    .login-button:hover, .signup-button:hover {
+      background-color: #5f9ea0; /* Light sea green */
     }
 
     main {
@@ -58,7 +83,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px; /* Increased padding */
+      padding: 40px;
       width: 100%;
     }
 
@@ -72,21 +97,21 @@
     .center-text {
       text-align: center;
       background-color: #ffffff;
-      padding: 50px; /* Increased padding for more space */
-      border-radius: 15px; /* Softer, more spacious corners */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
       width: 100%;
     }
 
     .center-text h1 {
-      font-size: 3rem; /* Larger heading */
+      font-size: 3rem;
       color: #4682b4;
-      margin-bottom: 30px; /* More space below heading */
+      margin-bottom: 30px;
     }
 
     .center-text p {
-      font-size: 1.3rem; /* Larger paragraph text */
-      line-height: 1.8; /* Increased line spacing */
+      font-size: 1.3rem;
+      line-height: 1.8;
       margin: 20px 0;
     }
 
@@ -94,9 +119,9 @@
       display: inline-block;
       background-color: #4682b4;
       color: #fff;
-      padding: 15px 30px; /* Larger button size */
+      padding: 15px 30px;
       text-decoration: none;
-      border-radius: 10px; /* More rounded button */
+      border-radius: 10px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1.5px;
@@ -133,6 +158,11 @@
       </ul>
     </nav>
   </header>
+
+  <div class="button-container">
+    <button class="login-button" onclick="location.href='login.html'">Log In</button>
+    <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
 
   <main>
     <div class="container">

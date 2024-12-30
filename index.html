@@ -6,7 +6,11 @@
   <title>Teleportation Program Personnel Panel</title>
   <style>
     /* General Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     /* Body Styling */
     body {
@@ -21,13 +25,14 @@
       align-items: center;
     }
 
+    /* Header Styling */
     header {
       background-color: #4682b4; /* Steel blue */
       width: 100%;
       padding: 10px 0;
       display: flex;
       justify-content: center; /* Center the items in the header */
-      align-items: center;  /* Aligns content in the center vertically */
+      align-items: center;
       position: relative;
     }
 
@@ -49,15 +54,17 @@
       letter-spacing: 1px;
     }
 
-    nav ul li a:hover { color: #add8e6; }
+    nav ul li a:hover {
+      color: #add8e6; /* Light blue */
+    }
 
-    /* Log In Button Container */
+    /* Log In Button Styling */
     .login-container {
       width: 100%;
       display: flex;
-      justify-content: flex-end; /* Aligns the button to the right */
-      padding-right: 20px; /* Adds spacing */
-      margin-top: 10px; /* Space below the header */
+      justify-content: flex-end;
+      padding-right: 20px;
+      margin-top: 10px;
     }
 
     .login-button {
@@ -77,6 +84,7 @@
       background-color: #5f9ea0; /* Light sea green */
     }
 
+    /* Main Content Styling */
     main {
       flex: 1;
       display: flex;
@@ -131,6 +139,7 @@
       background-color: #5f9ea0; /* Light sea green */
     }
 
+    /* Footer Styling */
     footer {
       background-color: #4682b4;
       color: #fff;
@@ -151,9 +160,12 @@
       </ul>
     </nav>
   </header>
+
+  <!-- Log In Button -->
   <div class="login-container">
     <button class="login-button">Log In</button>
   </div>
+
   <main>
     <div class="container">
       <div class="center-text">
@@ -163,10 +175,9 @@
       </div>
     </div>
   </main>
+
   <footer>
     <p>&copy; 2024 Teleportation Program. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-]

@@ -18,9 +18,9 @@
       color: #333;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-between;
       height: 100vh;
+      align-items: center;
     }
 
     header {
@@ -30,13 +30,6 @@
       text-align: center;
     }
 
-    header h1 {
-      color: white;
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
     nav ul {
       display: flex;
       justify-content: center;
@@ -44,62 +37,80 @@
     }
 
     nav ul li {
-      margin: 0 15px;
+      margin: 0 20px;
     }
 
     nav ul li a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     nav ul li a:hover {
-      text-decoration: underline;
+      color: #add8e6; /* Light blue */
     }
 
-    .main-content {
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .center-text {
       text-align: center;
-      margin: 50px 20px;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
     }
 
-    .main-content h2 {
-      font-size: 2rem;
+    .center-text h1 {
+      font-size: 2.5rem;
       color: #4682b4;
       margin-bottom: 20px;
     }
 
-    .main-content p {
+    .center-text p {
       font-size: 1.2rem;
-      margin-bottom: 20px;
+      margin: 10px 0;
     }
 
-    .button-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .button-container button {
+    .cta-button {
+      display: inline-block;
       background-color: #4682b4;
-      color: white;
+      color: #fff;
       padding: 12px 25px;
+      text-decoration: none;
       border-radius: 5px;
-      font-size: 1rem;
-      border: none;
-      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 20px;
       transition: background-color 0.3s ease;
     }
 
-    .button-container button:hover {
-      background-color: #5f9ea0;
+    .cta-button:hover {
+      background-color: #5f9ea0; /* Light sea green */
     }
 
     footer {
       background-color: #4682b4;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 10px 0;
+      padding: 15px;
       width: 100%;
     }
 
@@ -110,7 +121,6 @@
 </head>
 <body>
   <header>
-    <h1>Teleportation Program Personnel Panel</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -122,12 +132,11 @@
   </header>
 
   <main>
-    <div class="main-content">
-      <h2>Welcome!</h2>
-      <p>Manage your teleportation personnel details, membership cards, and stay updated with the latest news.</p>
-      <div class="button-container">
-        <button onclick="window.location.href='login.html'">Log In</button>
-        <button onclick="window.location.href='signup.html'">Sign Up</button>
+    <div class="container">
+      <div class="center-text">
+        <h1>Welcome to the Teleportation Program Personnel Panel</h1>
+        <p>Your account and membership card information are displayed here.</p>
+        <a href="login.html" class="cta-button">Get Started</a>
       </div>
     </div>
   </main>

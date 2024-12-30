@@ -4,38 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teleportation Program Personnel Panel</title>
-
-  <!-- Embedded styles (no separate CSS file) -->
   <style>
     /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     /* Body Styling */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #e6f7ff; /* Very light blue background */
+      background-color: #e6f7ff;
       color: #333;
       line-height: 1.6;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100vh;
-      align-items: center;  /* Centers everything vertically */
+      align-items: center;
     }
 
-    /* Header Styling */
     header {
-      background-color: #4682b4; /* Steel blue */
+      background-color: #4682b4;
       width: 100%;
       padding: 10px 0;
       display: flex;
-      justify-content: center; /* Center the items in the header */
-      align-items: center;  /* Aligns content in the center vertically */
-      position: relative;
+      justify-content: center;
+      align-items: center;
     }
 
     nav ul {
@@ -56,37 +48,8 @@
       letter-spacing: 1px;
     }
 
-    nav ul li a:hover {
-      color: #add8e6; /* Light blue */
-    }
+    nav ul li a:hover { color: #add8e6; }
 
-    /* Log In Button Container */
-    .login-container {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end; /* Aligns the button to the right */
-      padding-right: 20px; /* Moves the button a bit away from the edge */
-      margin-top: 20px; /* Adds space between the header and login button */
-    }
-
-    .login-button {
-      background-color: #4682b4;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .login-button:hover {
-      background-color: #5f9ea0; /* Light sea green */
-    }
-
-    /* Main Content Styling */
     main {
       flex: 1;
       display: flex;
@@ -96,52 +59,16 @@
       width: 100%;
     }
 
-    .container {
-      width: 90%;
-      max-width: 900px;
-      display: flex;
-      justify-content: center;
-    }
-
     .center-text {
       text-align: center;
       background-color: #ffffff;
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 100%;
+      width: 90%;
+      max-width: 900px;
     }
 
-    .center-text h1 {
-      font-size: 2.5rem;
-      color: #4682b4;
-      margin-bottom: 20px;
-    }
-
-    .center-text p {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #4682b4;
-      color: #fff;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #5f9ea0; /* Light sea green */
-    }
-
-    /* Footer Styling */
     footer {
       background-color: #4682b4;
       color: #fff;
@@ -155,28 +82,19 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">My Account</a></li>
-        <li><a href="#">Membership Card</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="membership.html">Membership Card</a></li>
+        <li><a href="news.html">News</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- Log In Button Container (Positioned below header but on the right side) -->
-  <div class="login-container">
-    <button class="login-button">Log In</button>
-  </div>
-
   <main>
-    <div class="container">
-      <div class="center-text">
-        <h1>Welcome to the Teleportation Program Personnel Panel</h1>
-        <p>Your account and membership card information are displayed here.</p>
-        <a href="#" class="cta-button">Get Started</a>
-      </div>
+    <div class="center-text">
+      <h1>Welcome to the Teleportation Program Personnel Panel</h1>
+      <p>This is the home page.</p>
     </div>
   </main>
-
   <footer>
     <p>&copy; 2024 Teleportation Program. All rights reserved.</p>
   </footer>

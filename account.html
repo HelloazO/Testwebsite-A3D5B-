@@ -4,7 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Account</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e6f7ff;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      align-items: center;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #4682b4;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav ul li a:hover {
+      color: #add8e6;
+    }
+
+    /* Main Content Styling */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .center-text {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    .center-text h1 {
+      font-size: 2.5rem;
+      color: #4682b4;
+      margin-bottom: 20px;
+    }
+
+    .center-text p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #4682b4;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,12 +115,16 @@
       </ul>
     </nav>
   </header>
+
   <main>
-    <div class="center-text">
-      <h1>My Account</h1>
-      <p>Your account details are displayed here.</p>
+    <div class="container">
+      <div class="center-text">
+        <h1>My Account</h1>
+        <p>Your account details are displayed here.</p>
+      </div>
     </div>
   </main>
+
   <footer>
     <p>&copy; 2024 Teleportation Program. All rights reserved.</p>
   </footer>

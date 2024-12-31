@@ -20,19 +20,20 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100vh;
-      align-items: center;
     }
 
     header {
       width: 100%;
       background-color: #4682b4;
       padding: 20px 0;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
     }
 
     nav ul {
       display: flex;
-      justify-content: center;
       list-style: none;
     }
 
@@ -55,14 +56,13 @@
 
     .button-container {
       display: flex;
-      justify-content: center;
-      margin-top: 20px;
+      gap: 15px;
     }
 
     .login-button, .signup-button {
       background-color: #4682b4;
       color: #fff;
-      padding: 12px 25px;
+      padding: 10px 20px;
       border-radius: 10px;
       font-weight: bold;
       text-transform: uppercase;
@@ -70,8 +70,7 @@
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      font-size: 1.1rem;
-      margin: 0 10px; /* Space between the buttons */
+      font-size: 1rem;
     }
 
     .login-button:hover, .signup-button:hover {
@@ -157,12 +156,11 @@
         <li><a href="news.html">News</a></li>
       </ul>
     </nav>
+    <div class="button-container">
+      <button class="login-button" onclick="location.href='login.html'">Log In</button>
+      <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
+    </div>
   </header>
-
-  <div class="button-container">
-    <button class="login-button" onclick="location.href='login.html'">Log In</button>
-    <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
-  </div>
 
   <main>
     <div class="container">

@@ -28,21 +28,13 @@
       background-color: #4682b4;
       padding: 20px 0;
       text-align: center;
-    }
-
-    header h1 {
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
+      position: relative;
     }
 
     nav ul {
       display: flex;
       justify-content: center;
       list-style: none;
-      margin-top: 10px;
     }
 
     nav ul li {
@@ -63,9 +55,12 @@
     }
 
     .button-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      align-items: center;
     }
 
     .login-button, .signup-button {
@@ -80,7 +75,7 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
       font-size: 1.1rem;
-      margin: 0 10px; /* Space between the buttons */
+      margin-left: 10px;
     }
 
     .login-button:hover, .signup-button:hover {
@@ -158,7 +153,6 @@
 </head>
 <body>
   <header>
-    <h1>The Teleportation Personnel Panel</h1> <!-- Added the requested text -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -167,12 +161,13 @@
         <li><a href="news.html">News</a></li>
       </ul>
     </nav>
-  </header>
 
-  <div class="button-container">
-    <button class="login-button" onclick="location.href='login.html'">Log In</button>
-    <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
-  </div>
+    <!-- Log In and Sign Up Buttons positioned at top right -->
+    <div class="button-container">
+      <button class="login-button" onclick="location.href='login.html'">Log In</button>
+      <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
+    </div>
+  </header>
 
   <main>
     <div class="container">

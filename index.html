@@ -133,6 +133,28 @@
       text-align: center;
     }
   </style>
+  
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+  <!-- Add other Firebase SDKs as needed -->
+
+  <script>
+    // Your Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAKjdNKeT_Vz1K8XEr2dlH07Gw_4KIn5tE",
+      authDomain: "test-1-dfeaa.firebaseapp.com",
+      projectId: "test-1-dfeaa",
+      storageBucket: "test-1-dfeaa.firebasestorage.app",
+      messagingSenderId: "321768366014",
+      appId: "1:321768366014:web:aa290dd1e6854444a223ef",
+      measurementId: "G-7W2YC7QL5X"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+  </script>
 </head>
 <body>
   <header>

@@ -20,20 +20,20 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100vh;
+      align-items: center;
     }
 
     header {
       width: 100%;
       background-color: #4682b4;
       padding: 20px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
+      text-align: center;
+      position: relative;
     }
 
     nav ul {
       display: flex;
+      justify-content: center;
       list-style: none;
     }
 
@@ -51,18 +51,21 @@
     }
 
     nav ul li a:hover {
-      color: #add8e6; /* Light blue */
+      color: #add8e6;
     }
 
+    /* Position the Log In and Sign Up buttons to the top-right */
     .button-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       display: flex;
-      gap: 15px;
     }
 
     .login-button, .signup-button {
       background-color: #4682b4;
       color: #fff;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 10px;
       font-weight: bold;
       text-transform: uppercase;
@@ -70,7 +73,8 @@
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      margin: 0 10px; /* Space between the buttons */
     }
 
     .login-button:hover, .signup-button:hover {
@@ -156,6 +160,8 @@
         <li><a href="news.html">News</a></li>
       </ul>
     </nav>
+
+    <!-- Log In and Sign Up buttons positioned at top right -->
     <div class="button-container">
       <button class="login-button" onclick="location.href='login.html'">Log In</button>
       <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>

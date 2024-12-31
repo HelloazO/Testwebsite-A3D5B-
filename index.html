@@ -28,7 +28,6 @@
       background-color: #4682b4;
       padding: 20px 0;
       text-align: center;
-      position: relative;
     }
 
     nav ul {
@@ -55,12 +54,11 @@
     }
 
     .button-container {
-      position: absolute;
-      top: 20px;
-      right: 20px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: 20px; /* Space between menu and buttons */
+      padding-right: 20px; /* Move buttons to the right */
     }
 
     .login-button, .signup-button {
@@ -75,7 +73,7 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
       font-size: 1.1rem;
-      margin-left: 10px;
+      margin: 0 10px;
     }
 
     .login-button:hover, .signup-button:hover {
@@ -153,6 +151,7 @@
 </head>
 <body>
   <header>
+    <h1>Teleportation Personnel Panel</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -161,13 +160,13 @@
         <li><a href="news.html">News</a></li>
       </ul>
     </nav>
-
-    <!-- Log In and Sign Up Buttons positioned at top right -->
-    <div class="button-container">
-      <button class="login-button" onclick="location.href='login.html'">Log In</button>
-      <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
-    </div>
   </header>
+
+  <!-- Buttons for Log In and Sign Up at the top right -->
+  <div class="button-container">
+    <button class="login-button" onclick="location.href='login.html'">Log In</button>
+    <button class="signup-button" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
 
   <main>
     <div class="container">

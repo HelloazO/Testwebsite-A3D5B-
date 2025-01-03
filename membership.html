@@ -28,10 +28,11 @@
       color: white;
       text-align: center;
       padding: 10px 15px;
+      position: relative;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
@@ -59,9 +60,9 @@
     }
 
     .login-container {
-      margin: 10px 0;
-      display: flex;
-      justify-content: center;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
 
     .login-button {
@@ -121,14 +122,14 @@
         <li><a href="news.html">News</a></li>
       </ul>
     </nav>
+    <div class="login-container">
+      <button class="login-button" onclick="window.location.href='login.html'">Log In</button>
+    </div>
   </header>
-  <div class="login-container">
-    <button class="login-button" onclick="window.location.href='login.html'">Log In</button>
-  </div>
   <main>
     <div class="center-box">
-      <h2>Your Membership Card</h2>
-      <p>Your membership details and benefits will appear here.</p>
+      <h2>Membership Card</h2>
+      <p>Access your membership privileges here.</p>
     </div>
   </main>
   <footer>
